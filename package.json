@@ -1,0 +1,1 @@
+{"name":"cmdcraft","version":"0.1.0","private":true,"type":"module","engines":{"node":">=20"},"scripts":{"local":"tsx src/main.ts","build":"tsc","test":"vitest run","typecheck":"tsc --noEmit"},"devDependencies":{"@types/node":"^22.0.0","typescript":"^5.7.0","tsx":"^4.19.0","vitest":"^3.0.0"},"dependencies":{"zod":"^3.24.0"}}

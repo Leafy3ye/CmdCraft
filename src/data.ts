@@ -1,0 +1,6 @@
+export const names: Record<string,[string,string]> = {
+logs:['橡木原木','Oak Log'],planks:['橡木木板','Oak Planks'],sticks:['木棍','Sticks'],cobblestone:['圆石','Cobblestone'],coal:['煤炭','Coal'],copper:['铜矿','Copper Ore'],raw_iron:['粗铁','Raw Iron'],iron_ingot:['铁锭','Iron Ingot'],wooden_pickaxe:['木镐','Wooden Pickaxe'],stone_pickaxe:['石镐','Stone Pickaxe'],iron_pickaxe:['铁镐','Iron Pickaxe'],workbench:['工作台','Workbench'],furnace:['熔炉','Furnace'],chest:['箱子','Chest']};
+export const recipes: Record<string,{cost:Record<string,number>;yield:number;bench?:boolean}>={
+planks:{cost:{logs:1},yield:4},sticks:{cost:{planks:2},yield:4},workbench:{cost:{planks:4},yield:1},wooden_pickaxe:{cost:{planks:3,sticks:2},yield:1,bench:true},stone_pickaxe:{cost:{cobblestone:3,sticks:2},yield:1,bench:true},iron_pickaxe:{cost:{iron_ingot:3,sticks:2},yield:1,bench:true},furnace:{cost:{cobblestone:8},yield:1,bench:true},chest:{cost:{planks:8},yield:1,bench:true}};
+export const tools:Record<string,{tier:number;max:number}>={wooden_pickaxe:{tier:1,max:59},stone_pickaxe:{tier:2,max:131},iron_pickaxe:{tier:3,max:250}};
+export const veins:Record<string,{item:string;tier:number}>={stone:{item:'cobblestone',tier:1},coal:{item:'coal',tier:1},copper:{item:'copper',tier:1},iron:{item:'raw_iron',tier:2}};
